@@ -205,6 +205,8 @@ p {
 
   border-radius: 10px;
   background: var(--Linear, linear-gradient(90deg, #780f9d 0%, #c471e0 100%));
+
+  animation: pulseScale 2000ms infinite;
 }
 
 @media screen and (min-width: 768px) {
@@ -928,6 +930,8 @@ p {
   padding: 14px 50px;
 
   cursor: pointer;
+
+  animation: pulseScale 2000ms infinite;
 }
 
 @media screen and (min-width: 768px) {
@@ -1328,5 +1332,17 @@ p {
 
   .footer-mail {
     font-size: 18px;
+  }
+}
+
+@keyframes pulseScale {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 1.08;
+  }
+  100% {
+    scale: 1;
   }
 }
