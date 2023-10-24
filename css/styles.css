@@ -392,6 +392,8 @@ p {
   border-radius: 20px;
   background: #fff;
   width: 292px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .list-two-image {
