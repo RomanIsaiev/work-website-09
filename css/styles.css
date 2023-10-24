@@ -1,35 +1,35 @@
 @font-face {
-  font-family: "Futura PT";
+  font-family: 'Futura PT';
   src: url(../fonts/FUTURAPT-LIGHT.TTF);
   font-weight: 300;
 }
 
 @font-face {
-  font-family: "Futura PT";
+  font-family: 'Futura PT';
   src: url(../fonts/FUTURAPT-BOOK.TTF);
   font-weight: 400;
 }
 
 @font-face {
-  font-family: "Futura PT";
+  font-family: 'Futura PT';
   src: url(../fonts/FUTURAPT-MEDIUM.TTF);
   font-weight: 450;
 }
 
 @font-face {
-  font-family: "Futura PT";
+  font-family: 'Futura PT';
   src: url(../fonts/FUTURAPT-DEMI.TTF);
   font-weight: 500;
 }
 
 @font-face {
-  font-family: "Futura PT";
+  font-family: 'Futura PT';
   src: url(../fonts/FUTURAPT-HEAVY.TTF);
   font-weight: 600;
 }
 
 @font-face {
-  font-family: "Futura PT";
+  font-family: 'Futura PT';
   src: url(../fonts/FUTURAPT-BOLD.TTF);
   font-weight: 700;
 }
@@ -80,11 +80,28 @@ p {
 }
 
 .start-date-container {
+  margin-bottom: 20px;
+}
+
+.start-date-flex {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
 
-  margin-bottom: 20px;
+.start-date-container::before {
+  content: '';
+  display: block;
+
+  height: 1px;
+  width: 100%;
+  background-color: #fff;
+
+  margin-top: 0;
+  margin-bottom: 5px;
+
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .start-text {
@@ -194,7 +211,7 @@ p {
   margin-right: auto;
 }
 .one-list-decoration {
-  content: "";
+  content: '';
   display: block;
 
   height: 40px;
@@ -206,7 +223,7 @@ p {
 }
 
 .sect-one-list .one-list-item::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -482,7 +499,7 @@ p {
 }
 
 .sect-five-list .list-item-title::after {
-  content: "";
+  content: '';
   display: block;
 
   height: 1px;
@@ -579,7 +596,7 @@ p {
 }
 
 .price::before {
-  content: "";
+  content: '';
   display: block;
 
   height: 1px;
@@ -748,7 +765,7 @@ p {
 }
 
 .question-two::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -818,7 +835,7 @@ p {
 }
 
 .faq-two::after {
-  content: "";
+  content: '';
   display: block;
 
   height: 1px;
@@ -833,7 +850,7 @@ p {
 }
 
 .section-six .wrapper::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -861,4 +878,66 @@ p {
   font-style: normal;
   font-weight: 400;
   line-height: 120%; /* 18px */
+}
+
+/* footer */
+
+.footer {
+  padding-top: 0;
+  padding-bottom: 40px;
+  background: #171717;
+}
+
+.footer-deals > a[href="https://docs.google.com/document/d/1jfg123NUK_OghkiyfOB0WmakK9yQ0_WBPbBaIaoDneU/edit?usp=sharing"
+] {
+  margin-bottom: 12px;
+}
+
+.footer-deals a {
+  display: block;
+
+  color: #fff;
+  text-align: center;
+  font-family: Futura PT;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: underline;
+}
+
+.footer-deals::after {
+  content: '';
+  display: block;
+
+  height: 1px;
+  width: 200px;
+  background-color: #fff;
+
+  margin-top: 24px;
+  margin-bottom: 24px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.social-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+
+  margin-bottom: 40px;
+}
+
+.footer-mail {
+  display: block;
+  color: #fff;
+  text-align: center;
+  font-family: Futura PT;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
 }
